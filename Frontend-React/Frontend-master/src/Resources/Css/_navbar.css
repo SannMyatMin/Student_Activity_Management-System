@@ -1,0 +1,340 @@
+.nav-mobile-overlay.active {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.nav-links {
+  position: relative;
+  padding-block: var(--section-padding-large);
+}
+
+.ul-desktop {
+  display: none;
+}
+
+.right-CTA-container {
+  position: relative;
+}
+
+.hamburger-wrapper {
+  position: fixed;
+  z-index: 101;
+  top: var(--section-padding-large);
+  right: var(--section-padding-small);
+  transition: all var(--animation-primary) 0.3s;
+}
+
+.hamburger-wrapper.active {
+  padding: 0.85em;
+  transition: all var(--animation-ease);
+}
+
+.hamburger {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3em;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  transition: all var(--animation-smooth);
+}
+
+.light-theme .hamburger {
+  background-color: var(--color-dark);
+}
+
+.dark-theme .hamburger {
+  background-color: var(--color-light);
+}
+
+.hamburger-bar {
+  --rotate-deg: 45deg;
+  --bar-gap: 2.22px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  transition: all var(--animation-smooth);
+}
+
+.hamburger-bar::before,
+.hamburger-bar::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 33%;
+  height: 1.5px;
+  margin: auto;
+  transition: all var(--animation-smooth);
+}
+
+.light-theme .hamburger-bar::before,
+.light-theme .hamburger-bar::after {
+  background-color: var(--color-light);
+}
+
+.dark-theme .hamburger-bar::before,
+.dark-theme .hamburger-bar::after {
+  background-color: var(--color-dark);
+}
+
+.hamburger-bar::before {
+  top: calc(var(--bar-gap) * -1);
+}
+
+.hamburger-bar::after {
+  top: var(--bar-gap);
+}
+
+.hamburger-wrapper.active .hamburger-bar::before {
+  top: 0;
+  rotate: calc(var(--rotate-deg) * -1);
+}
+
+.hamburger-wrapper.active .hamburger-bar::after {
+  top: 0;
+  rotate: var(--rotate-deg);
+}
+
+.modal-nav-mobile {
+  pointer-events: none;
+  overflow: hidden;
+  position: fixed;
+  z-index: 100;
+  right: var(--section-padding-small);
+  top: var(--section-padding-large);
+  border-radius: var(--border-radius);
+}
+
+.modal-nav-mobile.active {
+  pointer-events: all;
+}
+
+.modal-block {
+  position: relative;
+  scale: 0;
+  width: 16em;
+  padding: 1.85em;
+  border-radius: var(--border-radius);
+  transform-origin: top right;
+  transition: all var(--animation-ease);
+}
+
+.light-theme .modal-block {
+  background-color: var(--color-dark);
+}
+
+.dark-theme .modal-block {
+  background-color: var(--color-light);
+}
+
+.modal-block.active {
+  scale: 1;
+  pointer-events: all;
+}
+
+.ul-mobile li {
+  position: relative;
+}
+
+.ul-mobile li::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: scale(0);
+  display: block;
+  width: 5.5px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  transform-origin: center;
+  transition: all var(--animation-smooth);
+}
+
+.light-theme .ul-mobile li::before {
+  background-color: var(--color-100);
+}
+
+.dark-theme .ul-mobile li::before {
+  background-color: var(--color-dark);
+}
+
+.ul-mobile li:hover::before {
+  transform: scale(1);
+}
+
+.ul-mobile .modal-menu {
+  display: block;
+  margin-block-end: 1.25em;
+  font-size: 0.75em;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.light-theme .ul-mobile .modal-menu {
+  color: var(--color-text-light);
+}
+
+.dark-theme .ul-mobile .modal-menu {
+  color: var(--color-text);
+}
+
+.ul-mobile a {
+  padding-block: 0.65em;
+}
+
+.ul-mobile li a span {
+  font-size: 1.5em;
+  font-weight: 450;
+}
+
+.light-theme .ul-mobile li a span {
+  color: var(--color-light);
+}
+
+.dark-theme .ul-mobile li a span {
+  color: var(--color-dark);
+}
+
+.light-theme .ul-mobile li.active a span {
+  color: var(--color-text-light);
+}
+
+.light-theme .ul-mobile li.active::before,
+.dark-theme .ul-mobile li.active::before {
+  transform: scale(1);
+}
+
+.light-theme .ul-mobile li.active::before {
+  background-color: var(--color-text-light);
+}
+
+.dark-theme .ul-mobile li.active a span {
+  color: var(--color-text);
+}
+
+.dark-theme .ul-mobile li.active::before {
+  background-color: var(--color-text);
+}
+
+.profile-box {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .nav-desktop-light {
+    background-color: var(--color-lightgray);
+  }
+
+  .nav-desktop-dark {
+    background-color: var(--color-dark);
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    height: 20vh;
+    padding-block: 0;
+  }
+
+  .nav-links-container {
+    position: fixed;
+    top: 0;
+    z-index: 200;
+    padding: 1em;
+  }
+
+  .nav-links-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    padding: 1em 2em;
+    border-radius: var(--border-radius);
+    background-color: var(--color-lightgray);
+  }
+
+  .nav-desktop-light .nav-links-wrapper {
+    background-color: var(--color-dark);
+  }
+
+  .right-CTA-container {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+  }
+
+  .profile-box {
+    overflow: hidden;
+    display: block;
+    width: 45px;
+    aspect-ratio: 1;
+    border-radius: var(--border-radius);
+  }
+
+  .profile-box img {
+    object-fit: cover;
+  }
+
+  .hamburger-wrapper {
+    display: none;
+  }
+
+  .hamburger-wrapper.active {
+    padding: 1.2em;
+  }
+
+  .hamburger {
+    width: 3.15em;
+  }
+
+  .hamburger-wrapper.active:hover .hamburger {
+    scale: 1.15;
+  }
+
+  .hamburger-bar {
+    --bar-gap: 2.9px;
+  }
+
+  .hamburger-wrapper:hover .hamburger-bar::before {
+    top: var(--bar-gap);
+  }
+
+  .hamburger-wrapper:hover .hamburger-bar::after {
+    top: calc(var(--bar-gap) * -1);
+  }
+
+  .hamburger-wrapper.active:hover .hamburger-bar::before {
+    top: 0;
+  }
+
+  .hamburger-wrapper.active:hover .hamburger-bar::after {
+    top: 0;
+  }
+
+  .ul-desktop {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+  }
+
+  .modal-nav-mobile {
+    top: var(--section-padding-small);
+  }
+
+  .modal-block {
+    width: 18em;
+    padding: 2.25em;
+  }
+
+  .ul-mobile a {
+    padding-block: 0.85em;
+  }
+
+  .ul-mobile li a span {
+    font-size: 1.75em;
+  }
+}

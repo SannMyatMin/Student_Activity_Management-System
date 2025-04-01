@@ -1,0 +1,82 @@
+
+
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 1em 0.75em;
+  font-weight: 400;
+  text-align: left;
+}
+
+tr:nth-child(1) {
+  border-bottom: var(--border-width) solid var(--color-border-light);
+}
+
+tr:nth-child(2n) {
+  background-color: rgba(var(--color-light-rgb), 0.05);
+}
+
+.light-theme th {
+  color: var(--color-dark);
+}
+
+.dark-theme th {
+  color: var(--color-light);
+}
+
+.light-theme td {
+  color: var(--color-text);
+}
+
+.dark-theme td {
+  color: var(--color-text-light);
+}
+
+.data-container {
+  padding-block: var(--section-padding-small);
+}
+
+.role-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.post-data-wrapper-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: var(--section-padding-small);
+}
+
+.light-theme .club-data-wrapper-content span {
+  color: var(--color-text);
+}
+
+.dark-theme .club-data-wrapper-content span {
+  color: var(--color-text-light);
+}
+
+.adminNoti-container {
+  width: 60%;
+  padding-block: var(--section-padding-small);
+}
+
+.search-bar-container {
+  width: 50%;
+  padding-block: var(--section-padding-small);
+  margin-inline: auto;
+}
+
+.search-bar .form-container {
+  width: 100%;
+}
+
+.search-bar .form-container form {
+  display: flex;
+  align-items: flex-start;
+  gap: 2em;
+}

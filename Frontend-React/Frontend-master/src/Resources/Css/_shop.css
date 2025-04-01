@@ -1,0 +1,349 @@
+.shop-container-wrapper {
+  padding-block-end: var(--section-padding-medium);
+}
+
+.shop-container-wrapper h1 {
+  font-size: 7.4vw;
+}
+
+.shop-container-wrapper-info-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: var(--section-padding-large);
+  border-top: var(--border-width) solid var(--color-border-light);
+}
+
+.shop-container-wrapper-info-container h5 {
+  font-size: 3.5vw;
+}
+
+.shop-container-wrapper-info img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 280px;
+  border-radius: var(--border-radius);
+}
+
+.items-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--section-gap-padding);
+  padding-block: var(--section-padding-large);
+}
+
+.item-container {
+  position: relative;
+  width: 420px;
+}
+
+.item-container.inactive {
+  cursor: not-allowed;
+}
+
+.item-container.inactive .item-container-img,
+.item-container.inactive .item-container-content {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.status-bar {
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  z-index: 20;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  color: var(--color-light);
+  background-color: var(--color-100);
+  border-radius: var(--border-radius);
+}
+
+.status-bar marquee {
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 450;
+  padding: 0.5em 0.9em;
+}
+
+.item-container.inactive .status-bar {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.item-container-img img {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: var(--border-radius);
+}
+
+.item-container-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-start: 1em;
+}
+
+.item-container-content p {
+  font-size: 1em;
+  color: var(--color-text-light);
+}
+
+.order-container {
+  overflow-y: scroll;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  z-index: 100;
+  top: 18vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 350px;
+  height: 80vh;
+  padding: 2em;
+  border-radius: var(--border-radius);
+  background-color: var(--color-lightgray);
+  transition: all var(--transition-smooth);
+}
+
+.order-container.active {
+  opacity: 1;
+  pointer-events: all;
+  top: 15vh;
+}
+
+.order-container h5 {
+  color: var(--color-dark);
+}
+
+.order-container-CTA,
+.modal-container-CTA {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block-end: 2em;
+}
+
+.order-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.order-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-block: 1.25em;
+}
+
+.order-content:not(:last-child) {
+  border-bottom: var(--border-width) solid var(--color-border);
+}
+
+.order-content-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.order-content img {
+  height: 60px;
+  aspect-ratio: 1;
+  border-radius: 1em;
+}
+
+.order-content-details {
+  width: 60%;
+}
+
+.order-content-details h5 {
+  color: var(--color-dark);
+}
+
+.order-content-CTA {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quantity-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75em;
+}
+
+.no-order-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding-block: 0.5em;
+}
+
+.no-order-wrapper > span {
+  font-size: 1.25em;
+  font-weight: 500;
+  color: var(--color-dark);
+}
+
+.shopRequestForm-container {
+  height: 80%;
+}
+
+.shopRequestForm-container.active body {
+  overflow: hidden;
+}
+
+.shopRequestForm-container {
+  overflow-y: scroll;
+}
+
+.shopRequestForm-container .form-container textarea {
+  color: var(--color-dark);
+}
+
+.shopRequestForm-container .form-container textarea::placeholder {
+  color: var(--color-text);
+}
+
+@media (min-width: 1024px) {
+  .shop-container-wrapper h1 {
+    font-size: 5em;
+  }
+
+  .shop-container-wrapper-info-container h5 {
+    font-size: 1.5em;
+  }
+
+  .shop-container-wrapper-info-container {
+    padding-block: var(--section-padding-small);
+  }
+
+  .shop-container-wrapper-info img {
+    max-height: 750px;
+  }
+
+  .items-wrapper {
+    padding-block: 0;
+  }
+
+  .item-container {
+    width: 30%;
+  }
+
+  .order-container {
+    width: 500px;
+  }
+}
+
+.editShop-CTA {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.editShop-content-wrapper,
+.editShopItems-wrapper {
+  margin-block-start: 2em;
+}
+
+.editShop-content-wrapper > div {
+  width: 100%;
+  padding-block: var(--section-padding-small);
+}
+
+.editShopItems-wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--section-gap-padding);
+}
+
+.editShopItems-CTA {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.editShopItem-wrapper {
+  width: 30%;
+}
+
+.editShopItem-wrapper .form-container {
+  width: 100%;
+}
+
+.receipt-container {
+  pointer-events: none;
+  opacity: 0;
+  width: 500px;
+  aspect-ratio: 1/0.5;
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  right: var(--section-padding-small);
+  padding: 2em;
+  border-radius: var(--border-radius);
+  background-color: var(--color-lightgray);
+  transition: all var(--transition-smooth);
+}
+
+.receipt-container.active {
+  opacity: 1;
+  pointer-events: all;
+  bottom: var(--section-padding-small);
+}
+
+.modal-container-CTA h5,
+.receipt-total h5 {
+  color: var(--color-dark);
+}
+
+.receipt-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+  padding-bottom: 0.75em;
+}
+
+.receipt-wrapper h5 {
+  color: var(--color-dark);
+}
+
+.receipt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-block: 0.75em;
+}
+
+.receipt h6 {
+  display: inline-block;
+  margin-inline-start: 0.75em;
+  font-size: 1em;
+  font-weight: 450;
+}
+
+.receipt-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block-start: 0.75em;
+  border-top: var(--border-width) solid var(--color-border);
+}
+
+.shopPosts-CTA {
+  padding-block: 2em;
+}
+
+.shop-container-title {
+  overflow: hidden;
+  padding-block: var(--section-padding-medium);
+}

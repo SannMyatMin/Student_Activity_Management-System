@@ -1,0 +1,100 @@
+.loginSignup-section {
+  padding-block: var(--section-padding-medium);
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-gap-padding);
+}
+
+.login-text-container,
+.signup-text-container {
+  padding-block-start: var(--section-padding);
+  margin-block-end: var(--section-padding-large);
+}
+
+.login-text-container,
+.signup-text-container,
+.form-container {
+  width: 100%;
+}
+
+.signup-text-container h1 {
+  font-size: 14vw;
+}
+
+.login-text-container h1 {
+  font-size: 10.5vw;
+}
+
+.light-theme .signup-text-container h1,
+.light-theme .login-text-container h1 {
+  color: var(--color-dark);
+}
+
+.dark-theme .signup-text-container h1,
+.dark-theme .login-text-container h1 {
+  color: var(--color-light);
+}
+
+.form-container {
+  padding-block: var(--section-padding-medium);
+}
+
+.form-row h4 {
+  font-size: 1em;
+}
+
+.light-theme .form-row h4 {
+  color: var(--color-dark);
+}
+
+.dark-theme .form-row h4 {
+  color: var(--color-light);
+}
+
+.form-row {
+  margin-block-end: 1.05em;
+}
+
+.form-btn-row {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+@media (min-width: 1024px) {
+  .loginSignup-section {
+    flex-direction: row;
+    gap: var(--section-gap-padding);
+  }
+
+  .login-text-container,
+  .signup-text-container {
+    width: 65%;
+    padding-block-start: 0;
+  }
+
+  .signup-text-container h1 {
+    font-size: 6em;
+  }
+
+  .login-text-container h1 {
+    font-size: 4.75em;
+  }
+
+  .form-container {
+    width: calc(65% - var(--section-gap-padding));
+    padding-block: 0;
+  }
+
+  .form-row h4 {
+    font-size: 1.25em;
+  }
+
+  .form-btn-row {
+    gap: 2em;
+  }
+
+  .form-row {
+    margin-block-end: 1.5em;
+  }
+}
