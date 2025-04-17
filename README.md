@@ -12,12 +12,12 @@ Students can only log in with the mail      provided by the university.
 
 User roles:
 
-        1.Admin 
-        2.Organizers 
-        3.Normal student
-        4.Club founder
-        5.Club members
-        6.Food court shop owner
+       1.Admin 
+       2.Organizers 
+       3.Normal student
+       4.Club founder
+       5.Club members
+       6.Food court shop owner
 
 1.Admin:
 
