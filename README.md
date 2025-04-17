@@ -7,7 +7,7 @@ This project is about the activity managements of the university students, like 
 ## System Demo 🤖
 
 Authentication 👨‍💼:
-        Students can only log in with the mail      provided by the university.
+         Students can only log in with the mail      provided by the university.
 
 User roles:
 
