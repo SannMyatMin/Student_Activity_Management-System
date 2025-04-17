@@ -18,7 +18,7 @@ User roles:
         5.Club members
         6.Food court shop owner
 
-1.Admin 🧑‍🎤🧸:
+1.Admin:
 
          -Manage student data
          -Accept/Reject club requests
