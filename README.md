@@ -4,7 +4,7 @@ This project is about the activity managements of the university students, like 
 
 
 
-## System Demo 🤖💻🖥️💾
+## System Demo 🤖💻
 
 Authentication 👨‍💼:
         Students can only log in with the mail      provided by the university.
