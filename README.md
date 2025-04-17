@@ -70,6 +70,6 @@ Backend  : java,Spring boot
 
 Database : Mysql
 
-## Database 🛢️📁🗂️
+## Database 🗂️
 
 ![Result Image](img/Database_Schema.png)
