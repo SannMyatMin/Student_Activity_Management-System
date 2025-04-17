@@ -12,10 +12,15 @@ Authentication:
 User roles:
 
 1.Admin 
-2.Organizers 
+
+2.Organizer 
+
 3.Normal student
+
 4.Club founder
+
 5.Club members
+
 6.Food court shop owner
 
 1.Admin:
