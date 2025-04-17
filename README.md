@@ -6,10 +6,11 @@ This project is about the activity managements of the university students, like 
 
 ## System Demo
 
-Authentication:
+Authentication 👨‍💼👨‍💻:
         Students can only log in with the mail      provided by the university.
 
 User roles:
+
         1.Admin 
         2.Organizer 
         3.Normal student
