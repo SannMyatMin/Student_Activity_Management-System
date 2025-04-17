@@ -52,8 +52,8 @@ User roles:
 6.Food court shop owner:
 
          -Manage shop
-           item inventory-add/remove item
-                         -update item(name, price,..)
+          item inventory-add/remove item
+                        -update item(name, price,..)
          -Manage orders
          -Posting about shops
 
