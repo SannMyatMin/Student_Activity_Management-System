@@ -1,10 +1,10 @@
 
-# UIT Student Activity Management Syatem
+# UIT Student Activity Management Syatem 💻
 This project is about the activity managements of the university students, like club and event activities.
 
 
 
-## System Demo 🤖💻
+## System Demo 🤖
 
 Authentication 👨‍💼:
         Students can only log in with the mail      provided by the university.
@@ -18,7 +18,7 @@ User roles:
         5.Club members
         6.Food court shop owner
 
-1.Admin:
+1.Admin 🧑‍🎤🧸:
 
          -Manage student data
          -Accept/Reject club requests
