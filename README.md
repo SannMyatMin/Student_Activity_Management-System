@@ -11,17 +11,17 @@ Authentication:
 
 User roles:
 
-1.Admin 
+        1.Admin 
 
-2.Organizer 
+        2.Organizer 
 
-3.Normal student
+        3.Normal student
 
-4.Club founder
+        4.Club founder
 
-5.Club members
+        5.Club members
 
-6.Food court shop owner
+        6.Food court shop owner
 
 1.Admin:
 
