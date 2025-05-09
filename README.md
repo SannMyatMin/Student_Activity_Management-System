@@ -36,7 +36,7 @@ User roles:
 
 5.Club members: 
 
-🍁 Particiate in club activities - View Club private posts
+🍁 Particiate in club activities - View club's private posts
 
 6.Food court shop owner: 
 
