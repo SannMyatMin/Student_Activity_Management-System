@@ -28,19 +28,19 @@ User roles:
 
 3.Normal student: 
 
-Creating club - Estiblish food court shop - Participate in certain events
+🕯️ Creating club - Estiblish food court shop - Participate in certain events
 
 4.Club founder: 
 
-Manage club activity - Manage club members - Posting about clubs
+🎲 Manage club activity - Manage club members - Posting about clubs
 
 5.Club members: 
 
-Particiate in club activities - View Club private posts
+🍁 Particiate in club activities - View Club private posts
 
 6.Food court shop owner: 
 
-Manage shop(item inventory : add/remove item - update item(name, price,..) -Manage orders - Posting about shops
+🍿 Manage shop(item inventory : add/remove item - update item(name, price,..) -Manage orders - Posting about shops
 
 ## Used languages 🍵
 
