@@ -24,7 +24,7 @@ User roles:
 
 2.Organizer: 
 
-Accept/Reject food court shop requests - Manage events - Manage selections and voating - Posting
+💡 Accept/Reject food court shop requests - Manage events - Manage selections and voating - Posting
 
 3.Normal student: 
 
