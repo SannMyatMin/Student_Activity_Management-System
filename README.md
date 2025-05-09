@@ -20,7 +20,7 @@ User roles:
 
 1.Admin:
          
- Manage student data - Accept/Reject club requests - Add/Remove organizers -Posting
+  Manage student data - Accept/Reject club requests - Add/Remove organizers -Posting
 
 2.Organizer: 
 
