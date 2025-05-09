@@ -18,12 +18,7 @@ User roles:
         5.Club members
         6.Food court shop owner
 
-1.Admin:
-
-         -Manage student data
-         -Accept/Reject club requests
-         -Add/Remove organizers
-         -Posting
+1.Admin: Manage student data -Accept/Reject club requests -Add/Remove organizers -Posting
 
 2.Organizer:
 
